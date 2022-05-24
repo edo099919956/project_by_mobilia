@@ -840,7 +840,7 @@
         }
     }
     
-    //--------- box ----------
+    //---------loader box ----------
     .box {
         position: fixed;
         top: 0;
@@ -893,15 +893,6 @@
         }
         100% {
             transform: rotate(360deg);
-        }
-    }
-    
-    @keyframes loader-14 {
-        0% {
-            box-shadow: 0 2em 0 -.2em currentcolor;
-        }
-        100% {
-            box-shadow: 0 1em 0 -.2em currentcolor;
         }
     }
     
