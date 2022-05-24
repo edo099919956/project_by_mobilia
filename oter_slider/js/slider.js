@@ -541,11 +541,10 @@ ChiefSlider.prototype.refresh = function() {
 //         document.querySelector(".box").style.display = "none"
 //     }, 1500);
 // };
-let img = document.querySelectorAll('img')
-for (let i = 0; i < img.length; i++) {
-    img[i].onload = function() {
-        setTimeout(() => {
-            document.querySelector(".box").style.display = "none"
-        }, 500);
-    }
-}
+// loader
+
+window.onload = function() {
+    setTimeout(() => {
+        document.querySelector(".box").style.display = "none"
+    }, 2000);
+};
