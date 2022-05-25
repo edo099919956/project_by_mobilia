@@ -624,29 +624,27 @@
         }
     }
     
-    .flex_cont_5_in_delete_money {
-        .delete_money {
-            font-size: 24px;
-            color: rgba(0, 0, 0, 0.5);
-            position: relative;
-            &::before {
-                content: "";
-                position: absolute;
-                width: 110px;
-                border-bottom: 1px solid black;
-                transform: rotate(195deg);
-                bottom: 13px;
-                left: 0;
-            }
-            &::after {
-                content: "";
-                position: absolute;
-                width: 110px;
-                border-bottom: 1px solid black;
-                transform: rotate(165deg);
-                bottom: 13px;
-                left: 0;
-            }
+    .delete_money {
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 110px;
+            border-bottom: 1px solid black;
+            transform: rotate(195deg);
+            bottom: 13px;
+            left: 0;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 110px;
+            border-bottom: 1px solid black;
+            transform: rotate(165deg);
+            bottom: 13px;
+            left: 0;
         }
     }
     
@@ -949,6 +947,13 @@
             display: flex;
             justify-content: center;
         }
+        .delete_money {
+            &::before,
+            &::after {
+                width: 80px;
+                bottom: 11px;
+            }
+        }
     }
     
     @media only screen and (max-width: 1260px) {
@@ -1018,6 +1023,13 @@
         .UserBlock {
             display: none;
         }
+        .delete_money {
+            &::before,
+            &::after {
+                width: 75px;
+                bottom: 9px;
+            }
+        }
     }
     
     @media only screen and (max-width: 800px) {
@@ -1050,11 +1062,11 @@
         .flex_cont_2_clumn_container div {
             height: 14.5%;
         }
-        .flex_cont_5_in_delete_money {
-            .delete_money::before,
-            .delete_money::after {
-                width: 70px;
-                bottom: 8px;
+        .delete_money {
+            &::before,
+            &::after {
+                width: 66px;
+                bottom: 9px;
             }
         }
     }
@@ -1150,16 +1162,6 @@
             padding-bottom: 20px;
             height: auto;
         }
-        .delete_money {
-            &::after {
-                bottom: 8px;
-                width: 63px;
-            }
-            &::before {
-                bottom: 8px;
-                width: 63px;
-            }
-        }
         .text_title_and_button>a {
             padding: 8px 40px;
         }
@@ -1177,6 +1179,13 @@
         }
         .text_redact_panel>div>p {
             margin-top: 10px;
+        }
+        .delete_money {
+            &::before,
+            &::after {
+                width: 57px;
+                bottom: 7px;
+            }
         }
     }
     
