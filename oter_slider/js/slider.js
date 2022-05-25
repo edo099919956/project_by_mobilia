@@ -535,16 +535,8 @@ ChiefSlider.prototype.refresh = function() {
 };
 
 // loader
-
-// window.onload = function() {
-//     setTimeout(() => {
-//         document.querySelector(".box").style.display = "none"
-//     }, 1500);
-// };
-// loader
-
 window.onload = function() {
     setTimeout(() => {
         document.querySelector(".box").style.display = "none"
-    }, 2000);
+    }, 1000);
 };

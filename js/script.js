@@ -190,8 +190,8 @@ for (let i = 0; i < img_click.length; i++) {
         location.href = 'oter_slider/slider.html'
     }
 }
-// loader
 
+// loader
 window.onload = function() {
     setTimeout(() => {
         document.querySelector(".box").style.display = "none"
